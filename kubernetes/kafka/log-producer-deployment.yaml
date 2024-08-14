@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: log-producer
-        image: secdevopsjourney/my-log-producer:v4
+        image: quota-manager:latest
+        imagePullPolicy: Never
         env:
         - name: KAFKA_USER_PASSWORD
           valueFrom:
